@@ -1,0 +1,706 @@
+{
+  "name": "Sentiment Analysis Benchmark",
+  "description": "100 e-commerce / movie / restaurant reviews for dense vs MoE cost comparison.",
+  "tasks": [
+    {
+      "id": "task_001",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Product stopped working after one week.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_002",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I've had food poisoning \u2014 never going back.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_003",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Lightning-fast shipping and packaged securely.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_004",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Flawless experience from checkout to delivery.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_005",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"It was a straightforward transaction.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_006",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The package arrived on time.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_007",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Absolutely love this item, highly recommend!\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_008",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"It's a basic product that fulfills a basic need.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_009",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"My kids absolutely love it \u2014 keeps them entertained for hours.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_010",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Five stars \u2014 shipping was fast and quality is perfect.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_011",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Standard experience with no surprises.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_012",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I'm obsessed with this skincare product, my skin has never looked better.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_013",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Average experience, met basic expectations.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_014",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Product is okay \u2014 not great, not terrible.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_015",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Functionality is fine, design is unremarkable.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_016",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The subscription cancelled my free trial without warning.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_017",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Quality control is clearly nonexistent here.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_018",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"This is exactly what I needed, works perfectly.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_019",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Absolutely love this item, highly recommend!\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_020",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Late delivery, wrong item, and no apology.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_021",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Would give zero stars if I could.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_022",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Smooth checkout and great product description accuracy.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_023",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Extremely disappointed \u2014 nothing like the photos.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_024",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Smooth checkout and great product description accuracy.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_025",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Outstanding service from start to finish.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_026",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Unresponsive support team and a broken product.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_027",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The hotel staff were beyond friendly and helpful.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_028",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Worst customer service I've ever experienced.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_029",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Really exceeded my expectations on all fronts.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_030",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Awful smell right out of the box, clearly defective.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_031",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The hotel staff were beyond friendly and helpful.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_032",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Incredibly slow service despite the premium price.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_033",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Performance is about what I expected.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_034",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The staff were professional and efficient.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_035",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I expected more but it still does what it claims.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_036",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Rude driver and damaged package on arrival.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_037",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Such a thoughtful gift \u2014 recipient was thrilled.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_038",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Decent product for the price.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_039",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I'm obsessed with this skincare product, my skin has never looked better.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_040",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Really exceeded my expectations on all fronts.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_041",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Falsely advertised product \u2014 completely misled.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_042",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Such a thoughtful gift \u2014 recipient was thrilled.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_043",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Cheap materials that started peeling on day one.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_044",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Staff was dismissive and unhelpful.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_045",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The course material was outstanding and very well structured.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_046",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"No complaints but nothing to rave about either.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_047",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Reasonable pricing for the quality offered.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_048",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The restaurant was clean and the menu was standard.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_049",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Incredibly well-made, worth every penny.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_050",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The hotel room was dirty and overpriced.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_051",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Best app update yet \u2014 so much smoother.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_052",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Complete scam \u2014 save your money.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_053",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Best purchase I've made all year.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_054",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"It works as described in the listing.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_055",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Lightning-fast shipping and packaged securely.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_056",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The noise level was unbearable the entire stay.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_057",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"It arrived in standard packaging with no extras.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_058",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The hotel room was as shown in the photos.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_059",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The repair was done quickly and the price was very fair.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_060",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I used it once and it functioned correctly.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_061",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Best app update yet \u2014 so much smoother.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_062",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Outstanding service from start to finish.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_063",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The movie was a masterpiece \u2014 I cried happy tears.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_064",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The movie was watchable but forgettable.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_065",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Incredibly well-made, worth every penny.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_066",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Loved every chapter \u2014 couldn't put this book down.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_067",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"This restaurant blew my mind. The pasta was divine.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_068",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Very misleading size chart, nothing fit correctly.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_069",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"My kids absolutely love it \u2014 keeps them entertained for hours.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_070",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Remarkable performance for the price point.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_071",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The product exceeded my expectations!\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_072",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Remarkable performance for the price point.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_073",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I've seen better but also much worse.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_074",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The course material was outstanding and very well structured.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_075",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Nothing special but does the job.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_076",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The flavors were incredible \u2014 10/10 would visit again.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_077",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Terrible quality \u2014 broke after two days.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_078",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Not the best in class but competitive.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_079",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Flawless experience from checkout to delivery.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_080",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Best purchase I've made all year.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_081",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Battery life is exactly as stated in the specs.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_082",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Arrived damaged and the return process is a nightmare.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_083",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The food was cold and the waiter was rude.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_084",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Superb build quality and responsive customer support.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_085",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The repair was done quickly and the price was very fair.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_086",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"This restaurant blew my mind. The pasta was divine.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_087",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The size was accurate to the measurements given.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_088",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The product exceeded my expectations!\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_089",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The concert was electric \u2014 best night of my life.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_090",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"I'd consider repurchasing if the price drops.\"",
+      "expected_labels": [
+        "Neutral"
+      ]
+    },
+    {
+      "id": "task_091",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The concert was electric \u2014 best night of my life.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_092",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Superb build quality and responsive customer support.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_093",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"This is exactly what I needed, works perfectly.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_094",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Total waste of money, do not buy.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_095",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The movie was boring and made no sense whatsoever.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_096",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Kept crashing every five minutes \u2014 unusable app.\"",
+      "expected_labels": [
+        "Negative"
+      ]
+    },
+    {
+      "id": "task_097",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Loved every chapter \u2014 couldn't put this book down.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_098",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"Five stars \u2014 shipping was fast and quality is perfect.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_099",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The flavors were incredible \u2014 10/10 would visit again.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    },
+    {
+      "id": "task_100",
+      "prompt": "Classify the sentiment of this review as Positive, Negative, or Neutral. Reply with only the label.\n\nReview: \"The movie was a masterpiece \u2014 I cried happy tears.\"",
+      "expected_labels": [
+        "Positive"
+      ]
+    }
+  ]
+}

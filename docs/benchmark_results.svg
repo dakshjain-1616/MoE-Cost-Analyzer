@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#ffffff" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#111827">Gemma Dense vs MoE — Live Benchmark Results</text>
+  <text x="450" y="56" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B7280">100 sentiment-analysis tasks · 200 real API calls · OpenRouter</text>
+
+  <!-- ── CHART 1: LATENCY ────────────────────────────── -->
+  <text x="320" y="78" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#374151">Latency (ms)</text>
+
+  <!-- grid lines (baseline y=365, scale 280/7000=0.04) -->
+  <line x1="80" y1="365" x2="565" y2="365" stroke="#D1D5DB" stroke-width="1"/>
+  <line x1="80" y1="285" x2="565" y2="285" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="80" y1="205" x2="565" y2="205" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="80" y1="125" x2="565" y2="125" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- y-axis -->
+  <line x1="80" y1="85" x2="80" y2="365" stroke="#9CA3AF" stroke-width="1"/>
+
+  <!-- y-axis labels -->
+  <text x="72" y="369" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">0</text>
+  <text x="72" y="289" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">2000</text>
+  <text x="72" y="209" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">4000</text>
+  <text x="72" y="129" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">6000</text>
+
+  <!-- GROUP 1: Avg Latency  Dense=1721ms(h=69,y=296)  MoE=1283ms(h=51,y=314) -->
+  <rect x="118" y="296" width="46" height="69" fill="#3B82F6" rx="3"/>
+  <text x="141" y="292" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#1D4ED8">1721</text>
+  <rect x="174" y="314" width="46" height="51" fill="#22C55E" rx="3"/>
+  <text x="197" y="310" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#15803D">1283</text>
+  <text x="159" y="381" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">Avg</text>
+
+  <!-- GROUP 2: P50  Dense=833ms(h=33,y=332)  MoE=605ms(h=24,y=341) -->
+  <rect x="268" y="332" width="46" height="33" fill="#3B82F6" rx="3"/>
+  <text x="291" y="328" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#1D4ED8">833</text>
+  <rect x="324" y="341" width="46" height="24" fill="#22C55E" rx="3"/>
+  <text x="347" y="337" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#15803D">605</text>
+  <text x="309" y="381" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">P50</text>
+
+  <!-- GROUP 3: P95  Dense=6748ms(h=270,y=95)  MoE=5879ms(h=235,y=130) -->
+  <rect x="418" y="95" width="46" height="270" fill="#3B82F6" rx="3" opacity="0.9"/>
+  <text x="441" y="91" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#1D4ED8">6748</text>
+  <rect x="474" y="130" width="46" height="235" fill="#22C55E" rx="3" opacity="0.9"/>
+  <text x="497" y="126" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#15803D">5879</text>
+  <text x="459" y="381" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">P95</text>
+
+  <!-- divider -->
+  <line x1="598" y1="78" x2="598" y2="390" stroke="#E5E7EB" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ── CHART 2: COST ───────────────────────────────── -->
+  <text x="745" y="78" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#374151">Cost per Query (μUSD)</text>
+
+  <!-- grid lines (scale 280/6=46.67) -->
+  <line x1="628" y1="365" x2="870" y2="365" stroke="#D1D5DB" stroke-width="1"/>
+  <line x1="628" y1="272" x2="870" y2="272" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="628" y1="178" x2="870" y2="178" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="628" y1="85"  x2="870" y2="85"  stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="628" y1="85" x2="628" y2="365" stroke="#9CA3AF" stroke-width="1"/>
+
+  <text x="620" y="369" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">0</text>
+  <text x="620" y="276" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">2</text>
+  <text x="620" y="182" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">4</text>
+  <text x="620" y="89"  text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF">6</text>
+
+  <!-- Dense: 4.94μUSD → h=231, y=134 -->
+  <rect x="670" y="134" width="64" height="231" fill="#3B82F6" rx="3"/>
+  <text x="702" y="130" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="600" fill="#1D4ED8">4.94 μ</text>
+  <text x="702" y="381" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">Dense</text>
+
+  <!-- MoE: 3.95μUSD → h=184, y=181 -->
+  <rect x="766" y="181" width="64" height="184" fill="#22C55E" rx="3"/>
+  <text x="798" y="177" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="600" fill="#15803D">3.95 μ</text>
+  <text x="798" y="381" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">MoE</text>
+
+  <!-- ── LEGEND ──────────────────────────────────────── -->
+  <rect x="278" y="397" width="13" height="13" fill="#3B82F6" rx="2"/>
+  <text x="297" y="408" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">Dense (google/gemma-4-31b-it)</text>
+  <rect x="488" y="397" width="13" height="13" fill="#22C55E" rx="2"/>
+  <text x="507" y="408" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#374151">MoE (google/gemma-4-26b-a4b-it)</text>
+
+  <!-- ── STAT BADGES ─────────────────────────────────── -->
+  <!-- Faster -->
+  <rect x="55" y="428" width="170" height="46" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" rx="8"/>
+  <text x="140" y="444" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#15803D" letter-spacing="0.5">⚡ MoE LATENCY WIN</text>
+  <text x="140" y="462" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#16A34A">25.5% faster</text>
+
+  <!-- Cheaper -->
+  <rect x="240" y="428" width="170" height="46" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" rx="8"/>
+  <text x="325" y="444" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#15803D" letter-spacing="0.5">💰 MoE COST WIN</text>
+  <text x="325" y="462" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#16A34A">20.0% cheaper</text>
+
+  <!-- Tasks -->
+  <rect x="425" y="428" width="170" height="46" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" rx="8"/>
+  <text x="510" y="444" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#1D4ED8" letter-spacing="0.5">📊 BENCHMARK SIZE</text>
+  <text x="510" y="462" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#2563EB">100 live tasks</text>
+
+  <!-- Errors -->
+  <rect x="610" y="428" width="235" height="46" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" rx="8"/>
+  <text x="727" y="444" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="#1D4ED8" letter-spacing="0.5">✅ RELIABILITY</text>
+  <text x="727" y="462" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#2563EB">0 errors / 200 calls</text>
+</svg>
