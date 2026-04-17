@@ -73,8 +73,8 @@ The report above is a fixed snapshot. Your production prompts are longer, your S
 ### Setup
 
 ```bash
-git clone https://github.com/neo-ai/moe-cost-analyzer.git
-cd moe-cost-analyzer
+git clone https://github.com/dakshjain-1616/MoE-Cost-Analyzer.git
+cd MoE-Cost-Analyzer
 pip install -r requirements.txt
 cp .env.example .env
 # add your key:  OPENROUTER_API_KEY=sk-or-v1-...
@@ -125,9 +125,9 @@ python analyze.py benchmark.json --dry-run
 **1. A Rich terminal table** — colour-coded decision matrix printed to stdout:
 
 ```
-╭────────────────────────┬──────────────────────┬──────────────────────┬──────────────╮
+╭────────────────────────┬──────────────────────┬──────────────────────┬──────────╮
 │ Metric                 │ Dense                │ MoE                  │ MoE vs Dense │
-├────────────────────────┼──────────────────────┼──────────────────────┼──────────────┤
+├────────────────────────┼──────────────────────┼──────────────────────┼──────────┤
 │ Avg Latency (ms)       │ 1721.3               │ 1283.2               │ -25.5%       │
 │ P50 Latency (ms)       │ 833.2                │ 605.1                │ -27.3%       │
 │ P95 Latency (ms)       │ 6748.1               │ 5879.2               │ -12.9%       │
@@ -135,7 +135,7 @@ python analyze.py benchmark.json --dry-run
 │ Total Cost (USD)       │ $0.0005              │ $0.0004              │ -20.0%       │
 │ Total Tokens           │ 4939                 │ 4939                 │ 0.0%         │
 │ Error Rate             │ 0.0%                 │ 0.0%                 │ N/A          │
-╰────────────────────────┴──────────────────────┴──────────────────────┴──────────────╯
+╰────────────────────────┴──────────────────────┴──────────────────────┴──────────╯
 
 Summary: MoE is 20.0% cheaper and 25.5% faster than the dense model.
 
@@ -231,6 +231,8 @@ Concurrent requests are capped at **5** to stay within OpenRouter rate limits. A
 |---|---|---|---|---|
 | `google/gemma-4-31b-it` | Dense | $0.10 / 1M | $0.10 / 1M | 128K |
 | `google/gemma-4-26b-a4b-it` | MoE | $0.08 / 1M | $0.08 / 1M | 128K |
+
+⚠️ **Note:** Pricing is approximate and subject to change. Check [OpenRouter API pricing](https://openrouter.ai) for current rates.
 
 Update `src/pricing.py` when OpenRouter rates change. The `ModelPricing` dataclass also stores `context_window` and model `type` for future extensions.
 
